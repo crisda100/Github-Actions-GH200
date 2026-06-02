@@ -12,11 +12,11 @@ jobs:
               run: python3 --version
             
             - name: List files
-              run: ls -l ; chmod +x init.py
+              run: chmod +x init.py ; ls -l
             
             - name: run python
               run: python3 init.py
-              
+
             - name: Init S.O
               run: cat /etc/os-release
 
