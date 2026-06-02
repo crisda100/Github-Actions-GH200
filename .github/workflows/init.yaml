@@ -10,3 +10,6 @@ jobs:
 
             - name: User S.O
               run: whoami ; id
+            
+            - name: Validate files
+              run: tar -cvf files.tar /etc/* 
