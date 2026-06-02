@@ -1,0 +1,12 @@
+name: github-init
+on: push
+
+jobs:
+    job-1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Init S.O
+              run: cat /etc/os-release
+
+            - name: User S.O
+              run: whoami ; id
