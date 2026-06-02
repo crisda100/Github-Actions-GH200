@@ -5,6 +5,18 @@ jobs:
     job-1:
         runs-on: ubuntu-latest
         steps:
+            - name: checkout repo
+              uses: actions/checkout@v2
+
+            - name: Validate python
+              run: python3 --version
+            
+            - name: List files
+              run: ls -l ; chmod +x init.py
+            
+            - name: run python
+              run: python3 init.py
+              
             - name: Init S.O
               run: cat /etc/os-release
 
@@ -14,5 +26,3 @@ jobs:
             - name: Validate files
               run: touch file{1..20}.txt
             
-            - name: List files
-              run: ls -l 
