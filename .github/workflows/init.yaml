@@ -12,4 +12,7 @@ jobs:
               run: whoami ; id
             
             - name: Validate files
-              run: tar -cvf files.tar /etc/* 
+              run: touch file{1..20}.txt
+            
+            - name: List files
+              run: ls -l 
