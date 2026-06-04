@@ -24,7 +24,7 @@ jobs:
             - run: sudo apt update -y
             - run: sudo apt install cowsay -y
             - name: Execute cowsay
-              run: cowsay -f dragon "Run for over,I am a DRAGON ........RARRR" >> dragon.txt
+              run: cowsay -f dragon "Run for over,I am a DRAGON ........RARRR .." >> dragon.txt
 
             - name: upload file  
               uses: actions/upload-artifact@v7
