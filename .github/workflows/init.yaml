@@ -34,7 +34,7 @@ jobs:
 
             - name: docker passwd
               run: echo "My password is  very safe" ${{ secrets.DOCKER_PASSWORD }}  
-            - name: docker passwd
+            - name: docker repo 
               run: echo "My docker repo " ${{ vars.DOCKER_REPO }}  
               
     job-2:
