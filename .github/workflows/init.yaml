@@ -20,15 +20,15 @@ jobs:
             
             - name: run python
               run: python3 init.py
-
-            - name: Init S.O
-              run: cat /etc/os-release
-
-            - name: User S.O
-              run: whoami ; id
             
-            - name: Validate files
-              run: touch file{1..20}.txt
+            - run: sudo apt update -y
+            - run: sudo apt install cowsay -y
+            - name: Execute cowsay
+              run: cowsay -f dragon "Run for over,I am a DRAGON ........RARRR" >> dragon.txt
+            - run: cat dragon.txt  
+      
+
+        
             
     job-2:
       runs-on: ubuntu-latest  
