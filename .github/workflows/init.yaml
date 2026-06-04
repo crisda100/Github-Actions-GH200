@@ -33,10 +33,10 @@ jobs:
                 path: dragon.txt
                   
     job-2:
-      needs: [job_1]
+      needs: [job-1]
       runs-on: ubuntu-latest  
       steps:
-          - name: upload file  
+          - name: download file  
             uses: actions/download-artifact@v8
             with:
                 name: dragon-test
