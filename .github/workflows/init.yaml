@@ -31,7 +31,9 @@ jobs:
               with:
                 name: dragon-test
                 path: dragon.txt
-                  
+
+            - name: docker passwd
+              run: echo "My password si very safe" ${{ secrets.DOCKER_PASSWORD }}  
     job-2:
       needs: [job-1]
       runs-on: ubuntu-latest  
