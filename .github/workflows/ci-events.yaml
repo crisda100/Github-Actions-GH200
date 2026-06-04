@@ -1,9 +1,6 @@
 name: Github actions events
 
 on:
- workflow_dispatch: 
- push:
- pull_request: 
  schedule:
    - cron: "*/5 * * * *"
 
@@ -15,8 +12,8 @@ jobs:
       - name: Print trigger event
         run: echo "My trigger is ${{ github.event_name }}"      
 
-      - name: Print trigger event
+      - name: Print branch 
         run: echo "My branch is ${{ github.ref_name }}"
-      - name: Print trigger event
+      - name: Print event
         run: echo "My branch is ${{ github.action }}"      
             
