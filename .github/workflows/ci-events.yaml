@@ -1,6 +1,9 @@
 name: Github actions events
 
 on:
+ workflow_dispatch: 
+ push:
+ pull_request: 
  schedule:
    - cron: "*/5 * * * *"
 
