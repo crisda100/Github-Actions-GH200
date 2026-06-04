@@ -1,0 +1,16 @@
+name: Understand runners
+
+on:
+ workflow_dispatch:
+ push: 
+
+jobs:
+    runners-info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print runners details
+              run: |
+                echo "Runner name: ${{ runner.name}}"
+                echo "Runner OS: ${{ runner.os}}"
+                echo "Runner Architecture: ${{ runner.arch}}"
+                echo "Runner workspace : ${{ runner.workspace}}"
