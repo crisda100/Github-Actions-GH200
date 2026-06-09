@@ -20,7 +20,7 @@ jobs:
       - name: Print event
         run: echo "My branch is ${{ github.action }}"      
       - name: My branch name
-        run: echo "My branch principal is called master? ${{ github.ref }}"
+        run: echo "My branch principal is ${{ github.ref }}"
       - name: If with main branch
         run: echo "My branch principal is called master? ${{ github.ref == 'refs/heads/master'}}"
 
