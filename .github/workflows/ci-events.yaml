@@ -7,7 +7,7 @@ on:
 
 jobs:
   event-job-info:
-    if: github.repository != 'crisda100/Github-Actions-GH200'
+    if: github.repository ==  'crisda100/Github-Actions-GH200'
     runs-on: ubuntu-latest
     steps:
       - name: Print trigger event
