@@ -34,4 +34,4 @@ jobs:
       - name: "Checkout"
         run: echo 'Running job depends by other job ${{ github.job }}'        
       - name: "Token"
-        run: echo 'Github token $GITHUB_TOKEN'      
+        run: echo "Github token $GITHUB_TOKEN"  
