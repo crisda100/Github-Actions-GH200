@@ -27,5 +27,10 @@ jobs:
         run: echo "environment=dev" >> "$GITHUB_ENV"  
       - name: variables environment
         run: echo "$GITHUB_ENV"  
-
+  other-event:
+    needs: [event-job-info]
+    runs-on: ubuntu-slim
+    steps:
+      - name: "Checkout"
+        run: echo 'Running job depends by other job ${{ github.job }}'        
       
