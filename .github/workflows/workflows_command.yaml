@@ -11,10 +11,12 @@ jobs:
         steps:
           - name: Runner name
             run: |
-                hostnamectl ///as/d/as/d
+                hostnamectl
                 cat /etc/os-release
                 uname -a
                 ip a ; whoami
+                python --version 
+                
           - name: "Group logging"
             run: |
                 echo "::group:: My group"
