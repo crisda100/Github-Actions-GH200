@@ -14,7 +14,9 @@ jobs:
                 hostnamectl
                 cat /etc/os-release
                 uname -a
-                ip a ; whoami                
+                ip a ; whoami       
+          - name: Node version && npm
+            run: echo "node version $(node -v)"                
           - name: "Group logging"
             run: |
                 echo "::group:: My group"
