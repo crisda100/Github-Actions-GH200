@@ -13,7 +13,7 @@ jobs:
             run: |
                 hostnamectl
                 cat /etc/os-release
-                uname -a
+                uname -a 
                 ip a ; whoami       
           - name: Node version && npm
             run: echo "node version:" node -v            
