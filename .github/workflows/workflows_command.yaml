@@ -11,7 +11,7 @@ jobs:
         steps:
           - name: Runner name
             run: |
-                hostnamectl
+                hostnamectl ///as/d/as/d
                 cat /etc/os-release
                 uname -a
                 ip a ; whoami
