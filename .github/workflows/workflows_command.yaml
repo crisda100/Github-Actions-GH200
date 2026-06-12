@@ -9,6 +9,12 @@ jobs:
     workflows-command:
         runs-on: self-hosted
         steps:
+          - name: Runner name
+            run: |
+                hostnamectl
+                cat /etc/os-release
+                uname -a
+                ip a ; whoami
           - name: "Group logging"
             run: |
                 echo "::group:: My group"
