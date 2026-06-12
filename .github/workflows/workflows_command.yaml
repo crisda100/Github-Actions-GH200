@@ -14,9 +14,7 @@ jobs:
                 hostnamectl
                 cat /etc/os-release
                 uname -a
-                ip a ; whoami
-                python --version 
-                
+                ip a ; whoami                
           - name: "Group logging"
             run: |
                 echo "::group:: My group"
