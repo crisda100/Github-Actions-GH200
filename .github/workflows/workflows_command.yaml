@@ -16,7 +16,7 @@ jobs:
                 uname -a
                 ip a ; whoami       
           - name: Node version && npm
-            run: echo "node version $(node -v)"                
+            run: echo "node version:" node -v            
           - name: "Group logging"
             run: |
                 echo "::group:: My group"
